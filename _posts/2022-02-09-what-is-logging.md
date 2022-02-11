@@ -48,17 +48,32 @@ In many languages program terminates with stack trace pointing to exact point of
 required to resolve the issue is knowing the input and state of the system just prior the error. 
 
 ## How to start?
-
 Don't delay it. Start logging right now. You don't have to master it to get benefits from using it. Most languages come 
 with some sort of logging out of the box.
 
+For Python there is a [logging](https://docs.python.org/3/library/logging.html) module.
+
+For Java there is a number of libraries available. I'll use [SLF4J](https://www.slf4j.org/) as an example.
+
+Declare the logger instance:
+
+    private static final Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+
+Print statements which explain what's going on or just happened in your program:
+
+    userRepository.insert(user);
+    logger.info("User {} created", user.getId());
+
+Observe the output similar to this:
+
+    0 [main] INFO HelloWorld - User 123 created
+
 ## Where to go next?
+When you join a new team, high chances there are already some agreements or conventions in place. Although the concept 
+of logging is considered a "must have" knowledge, no one expects you to know all the practices accepted at new place. 
+But asking for it will definitely give you some bonus points in eyes of your new colleagues.
 
+If team conventions are not formalized, then checking logging usage through the code will server you well.
 
-
-
-Three pillars: traceability, ...
-Use cases, real life situations
-How to start or where to start
-Conventions - team agreement
-Ever changing goal
+If you are willing to understand and master logging or improve conventions used at your workplace please continue to the 
+next articles which will deep dive into do's and don'ts of logging.
