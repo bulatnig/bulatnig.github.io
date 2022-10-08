@@ -1,8 +1,8 @@
 # What is logging?
 
-Logging is printing out whatever happening in your program. **The End**.
+Logging is printing out whatever happens in your program. **The End**.
 
-If everything could be that simple! There is a whole theory behind it, lots of pitfalls to avoid and best practices 
+If everything was that simple! There is a whole theory behind it, lots of pitfalls to avoid and best practices 
 to follow. This is the first article in a series dedicated to logging, which will introduce you to the topic and explain
 why you need it.
 

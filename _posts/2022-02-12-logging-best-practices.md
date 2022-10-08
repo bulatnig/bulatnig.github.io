@@ -128,7 +128,7 @@ it returns other kinds of messages too, for example:
     User Peter added discount buy-one-get-one to basket
 
 And we started with already quite detailed pattern. You probably have that experience of going through a number 
-of iterations trying to come up with right pattern to match only the kins of messages you want to.
+of iterations trying to come up with right pattern to match only the messages you want to.
 
 My way to sort this out is to split log message to machine-readable code and only human-readable description. 
 Example above might be transformed like this:

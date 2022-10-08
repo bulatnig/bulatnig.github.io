@@ -27,7 +27,7 @@ Log level allows to control detalization of logging without changing any code. P
 - using dynamic logging configuration to enable DEBUG or TRACE level logging in production when unreproducible bug 
 arises
 
-Many programs nowadays either multi-threaded or use asynchronous programming. Mixing and matching different log records 
+Many programs nowadays either use multithreaded or asynchronous programming. Mixing and matching different log records 
 is impossible without knowing the context of those records. Log records can contain extra information such as 
 file name, class name, thread name, request or user id. They allow to filter out records to get a slice of events 
 happened in particular context. Distributed tracing solves the problem of matching logs from different services in 
